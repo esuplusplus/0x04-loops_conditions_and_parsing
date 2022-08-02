@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
-# displays Holberton School 10 times.
-
-COUNTER=0
-while [ $COUNTER -lt 11 ]
+# Display "Best School" 10 times
+# 9th element display "Best School" and then "Hi"
+i=1
+while [ $i -le 10 ]
 do
-    if [ $COUNTER = 9 ]
-    then
-        echo "Hi"
-    else
-        echo "Holberton School"
-    fi
-    let COUNTER+=1
+	if [ $i = 10 ]
+	then
+		echo "Hi"
+	fi
+	echo "Best School"
+	i=$(( i + 1 ))
 done
